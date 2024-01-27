@@ -2,7 +2,7 @@
 title: Skills: Influencing
 description: 
 published: true
-date: 2024-01-27T03:11:07.156Z
+date: 2024-01-27T03:12:49.823Z
 tags: skills
 editor: markdown
 dateCreated: 2024-01-27T03:11:07.155Z
@@ -11,8 +11,7 @@ dateCreated: 2024-01-27T03:11:07.155Z
 
   
 # Overview
-  heading:: 1
-	- Kỹ năng tạo ảnh hưởng là khả năng tạo được uy tín, thuyết phục, nhờ đó nhận được sự hỗ trợ, ủng hộ từ người khác.
+- Kỹ năng tạo ảnh hưởng là khả năng tạo được uy tín, thuyết phục, nhờ đó nhận được sự hỗ trợ, ủng hộ từ người khác.
 
 # Levels
 
