@@ -2,7 +2,7 @@
 title: Skills: Complex problem solving
 description: 
 published: true
-date: 2024-01-27T02:44:05.780Z
+date: 2024-01-27T02:46:19.205Z
 tags: skills
 editor: markdown
 dateCreated: 2024-01-27T02:33:33.341Z
