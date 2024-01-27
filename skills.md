@@ -2,7 +2,7 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-01-27T03:01:45.734Z
+date: 2024-01-27T03:05:19.730Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
