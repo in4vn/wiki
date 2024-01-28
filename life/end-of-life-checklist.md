@@ -2,16 +2,25 @@
 title: End of life checklist
 description: 
 published: true
-date: 2024-01-27T06:28:56.517Z
+date: 2024-01-28T03:39:42.487Z
 tags: life
 editor: markdown
 dateCreated: 2024-01-27T06:28:56.517Z
 ---
 
-# Tài khoản
+# Tài khoản online
 - Apple
 - Google
 - Outlook
+
+# Dịch vụ hàng tháng
+- Điện
+- Nước
+- Internet
+- Netflix
+
+# Dịch vụ hàng năm
+- Domain
 
 # Tài sản
 - Thừa kế
@@ -36,3 +45,7 @@ dateCreated: 2024-01-27T06:28:56.517Z
 - Danh sách thiét bị và mật khẩu.
 - Hướng dẫn sử dụng và sửa chữa nhanh
 - Thông tin liên lạc công ty và bạn bè
+
+# Người trợ giúp
+- Sửa chữa đồ dùng trong nhà
+- Sửa lỗi dịch vụ online
