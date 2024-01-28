@@ -2,7 +2,7 @@
 title: End of life checklist
 description: 
 published: true
-date: 2024-01-28T03:45:26.488Z
+date: 2024-01-28T03:46:43.309Z
 tags: life
 editor: markdown
 dateCreated: 2024-01-27T06:28:56.517Z
@@ -23,10 +23,13 @@ dateCreated: 2024-01-27T06:28:56.517Z
 # Dịch vụ đóng phí hàng năm
 - Domain
 - Thẻ tín dụng
+- Bảo hiểm nhân thọ
 
 # Tài khoản ngân hàng + tiền gửi
 
-# Tài sản
+# Tài khoản đầu tư
+
+# Tài sản khác
 - Thừa kế
 	- Danh sách tài sản
 	- Người thừa kế
