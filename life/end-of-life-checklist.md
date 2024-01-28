@@ -2,7 +2,7 @@
 title: End of life checklist
 description: 
 published: true
-date: 2024-01-28T03:39:42.487Z
+date: 2024-01-28T03:41:55.050Z
 tags: life
 editor: markdown
 dateCreated: 2024-01-27T06:28:56.517Z
@@ -12,6 +12,7 @@ dateCreated: 2024-01-27T06:28:56.517Z
 - Apple
 - Google
 - Outlook
+- Bitwawden
 
 # Dịch vụ hàng tháng
 - Điện
@@ -45,6 +46,10 @@ dateCreated: 2024-01-27T06:28:56.517Z
 - Danh sách thiét bị và mật khẩu.
 - Hướng dẫn sử dụng và sửa chữa nhanh
 - Thông tin liên lạc công ty và bạn bè
+
+# Hướng dẫn sử dụng
+
+# Hướng dẫn sửa chữa
 
 # Người trợ giúp
 - Sửa chữa đồ dùng trong nhà
