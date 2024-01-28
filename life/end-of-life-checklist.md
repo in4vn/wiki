@@ -2,7 +2,7 @@
 title: End of life checklist
 description: 
 published: true
-date: 2024-01-28T03:41:55.050Z
+date: 2024-01-28T03:43:20.977Z
 tags: life
 editor: markdown
 dateCreated: 2024-01-27T06:28:56.517Z
@@ -14,14 +14,15 @@ dateCreated: 2024-01-27T06:28:56.517Z
 - Outlook
 - Bitwawden
 
-# Dịch vụ hàng tháng
+# Dịch vụ đóng phí hàng tháng
 - Điện
 - Nước
 - Internet
 - Netflix
 
-# Dịch vụ hàng năm
+# Dịch vụ đóng phí hàng năm
 - Domain
+- Thẻ tín dụng
 
 # Tài sản
 - Thừa kế
