@@ -2,13 +2,13 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-05T07:26:09.146Z
+date: 2024-02-05T07:26:37.714Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
 ---
 
-CodeCheck > Mandatory
+[CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
 
 # TheWidestPath
 ```javascript
