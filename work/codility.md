@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-05T07:26:37.714Z
+date: 2024-02-05T07:55:50.020Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -70,5 +70,34 @@ function solution(A, D) {
     }, 0);
 
     return total;
+}
+```
+
+# CastleBuilding
+```javascript
+function solution(A) {
+    if (A.length === 0) {
+        return 0;
+    }
+
+    A = A.reduce((res, num, ind) => {
+        if (num !== A[ind + 1]) {
+            res.push(num);
+        }
+        return res;
+    }, []);
+
+    let count = 0;
+    const len = A.length;
+    for (let i = 0; i < len; i++) {
+        const current = A[i];
+        const prev = A[i - 1] || current;
+        const next = A[i + 1] || current;
+        if (Math.min(prev, current, next) === current || Math.max(prev, current, next) === current) {
+            count ++;
+        }
+    }
+
+    return count;
 }
 ```
