@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-08T07:44:25.325Z
+date: 2024-02-08T08:04:47.830Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -123,5 +123,37 @@ function solution(S) {
     }
 
     return [];
+}
+```
+
+# CountBananas
+```javascript
+function solution(S) {
+    if (S.length === 0) {
+        return 0;
+    }
+
+    let string = S;
+    const toBeRemoved = ['B', 'A', 'N', 'A', 'N', 'A'];
+    const len = toBeRemoved.length;
+
+    const move = () => {
+        let count = 0;
+        for (let i = 0; i < len; i++) {
+            const charToRemove = toBeRemoved[i];
+            if (string.indexOf(charToRemove) !== -1) {
+                count++;
+                string = string.replace(charToRemove, '');
+            }
+        }
+        return count === 6;
+    }
+
+    let removeCount = 0;
+    while (move()) {
+        removeCount++;
+    }
+
+    return removeCount;
 }
 ```
