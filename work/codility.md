@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-08T08:04:47.830Z
+date: 2024-02-08T08:30:52.425Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -155,5 +155,49 @@ function solution(S) {
     }
 
     return removeCount;
+}
+```
+
+# CreatePalindrome
+Test cases
+```
+"?a?"
+"ab?"
+"?ba"
+"???"
+```
+
+```javascript
+function solution(S) {
+    const Slen = S.length;
+    if (Slen === 0 || Slen > 1000) {
+        return "NO";
+    }
+
+    let string = S.split("");
+    const len = string.length;
+    const last = len - 1;
+    const middle = Math.floor(len / 2);
+
+    for (let i = 0; i < middle; i++) {
+        const current = string[i];
+        const opposite = string[last - i];
+        if (current === '?' && opposite !== '?') {
+            string[i] = opposite;
+        } else if (current !== '?' && opposite === '?') {
+            string[last - i] = current;
+        } else if (current === "?" && opposite === "?") {
+            string[i] = "a";
+            string[last - i] = "a";
+        } else if (current !== opposite) {
+            return "NO";
+        }
+    }
+
+    if (string[middle] === "?") {
+        string[middle] = "a";
+    }
+    
+    return string.join("");
 }
 ```
