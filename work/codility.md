@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-09T08:21:37.390Z
+date: 2024-02-09T08:27:28.424Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -202,7 +202,10 @@ function solution(S) {
 }
 ```
 
-# DiversityString
+# DiversityString 
+
+80%
+
 ```javascript
 function solution(N) {
     if (N < 1 || N > 200000) {
