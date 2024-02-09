@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-08T08:30:52.425Z
+date: 2024-02-09T08:21:37.390Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -199,5 +199,48 @@ function solution(S) {
     }
     
     return string.join("");
+}
+```
+
+# DiversityString
+```javascript
+function solution(N) {
+    if (N < 1 || N > 200000) {
+        return "";
+    }
+
+    const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    const len = chars.length;
+    let repeat = 0;
+    
+    const getRepeatTimes = () => {
+        for (let i = len - 1; i >= 0; i--) {
+            if (N % i === 0) {
+                return N / i;
+            }
+        }
+    }
+
+    if (N <= len) {
+        repeat = 1;
+    } else {
+        repeat = getRepeatTimes();
+    }
+
+    const result = [];
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < repeat; j++) {
+            if (result.length < N) {
+                result.push(chars[i]);
+            }
+        }
+    }
+
+    // console.log("N", N)
+    // console.log("len", len)
+    // console.log("repeat", repeat)
+    // console.log("res", result.join(""))
+
+    return result.join("");
 }
 ```
