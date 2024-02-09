@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-09T08:46:50.765Z
+date: 2024-02-09T09:09:05.155Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -11,6 +11,8 @@ dateCreated: 2024-01-28T08:26:29.363Z
 [CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
 
 # EraseOneLetter
+
+50%
 
 ```javascript
 function solution(S) {
@@ -23,6 +25,22 @@ function solution(S) {
     for (let i = 0; i < len; i++) {
         const string = S.substr(0, i) + S.substr(i + 1);
         removed.push(string);
+    }
+
+    const sorted = removed.sort((a, b) => a.localeCompare(b));
+    return sorted[0];
+}
+
+function solution(S) {
+    const len = S.length;
+    if (len < 2 || len > 100000) {
+        return '';
+    }
+
+    const removed = [];
+    const original = S.split("");
+    for (let i = 0; i < len; i++) {
+        removed.push(original.filter((char, index) => index !== i).join(""));
     }
 
     const sorted = removed.sort((a, b) => a.localeCompare(b));
