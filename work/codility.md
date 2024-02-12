@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-12T07:49:43.613Z
+date: 2024-02-12T07:50:49.466Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -11,6 +11,8 @@ dateCreated: 2024-01-28T08:26:29.363Z
 [CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
 
 # EvenPairsOnCycle
+
+91%
 
 ```javascript
 function solution(A) {
