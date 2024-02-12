@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-12T07:50:49.466Z
+date: 2024-02-12T07:55:27.973Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -12,12 +12,13 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # EvenPairsOnCycle
 
-91%
+
 
 ```javascript
 function solution(A) {
     const len = A.length;
-    if (len < 1 || len > 100000) {
+  	// we need at least 2 numbers to make a pair
+    if (len < 2 || len > 100000) {
         return 0;
     }
 
