@@ -2,13 +2,56 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-09T09:28:16.054Z
+date: 2024-02-12T07:49:43.613Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
 ---
 
 [CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
+
+# EvenPairsOnCycle
+
+```javascript
+function solution(A) {
+    const len = A.length;
+    if (len < 1 || len > 100000) {
+        return 0;
+    }
+
+    const doCount = (startIndex) => {
+        let count = 0;
+        let skipNext = false;
+        let skipFirst = false;
+        let skipLast = false;
+
+        for (let i = startIndex; i < len; i += skipNext ? 2 : 1) {
+            if (A[i + 1] !== undefined && (A[i] + A[i + 1]) % 2 === 0) {
+                count ++;
+                skipNext = true;
+                if (i === 0) {
+                    skipFirst = true;
+                }
+                if (i === len - 1) {
+                    skipLast = true;
+                }
+            } else {
+                skipNext = false;
+            }
+        }
+
+        if (skipFirst === false && skipLast === false) {
+            if ((A[0] + A[len - 1]) % 2 === 0) {
+                count ++;
+            } 
+        }
+
+        return count;
+    }
+
+    return Math.max(doCount(0), doCount(1));
+}
+```
 
 # EraseOneLetter
 
