@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-12T07:55:27.973Z
+date: 2024-02-12T08:36:54.437Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -10,9 +10,60 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 [CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
 
+# ForbiddenTriosSwaps
+
+```javascript
+function solution(S) {
+    const len = S.length;
+    if (len < 3 || len > 200000) {
+        return 0;
+    }
+
+    const array = S.split("");
+    let aCount = 0;
+    let bCount = 0;
+    let move = 0;
+  
+    for (let i = 0; i < len; i++) {
+        if (array[i] === 'a') {
+            aCount ++;
+            bCount = 0;
+        } else {
+            bCount ++;
+            aCount = 0;
+        }
+
+        if (aCount === 3) {
+            if (array[i + 1] === 'a') {
+                array[i] = 'b';
+                aCount = 0;
+                bCount ++;
+            } else {
+                array[i - 1] = 'b';
+                aCount = 1;
+                bCount = 0;
+            }
+            move ++;
+        }
+        if (bCount === 3) {
+            if (array[i + 1] === 'a') {
+                array[i] = 'b';
+                bCount = 0;
+                aCount ++;
+            } else {
+                array[i - 1] = 'b';
+                bCount = 1;
+                aCount = 0;
+            }
+            move ++;
+        }
+    }
+
+    return move;
+}
+```
+
 # EvenPairsOnCycle
-
-
 
 ```javascript
 function solution(A) {
