@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T09:28:41.261Z
+date: 2024-02-14T09:29:48.193Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -17,6 +17,9 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Array to set: new Set(array)
 
 # FormatArray
+
+62%
+
 ```javascript
 function solution(A, K) {
     const len = A.length;
