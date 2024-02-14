@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T09:27:12.984Z
+date: 2024-02-14T09:28:41.261Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,9 +18,6 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # FormatArray
 ```javascript
-// you can write to stderr for debugging purposes, e.g.
-// process.stderr.write('this is a debug message');
-
 function solution(A, K) {
     const len = A.length;
     if (len < 0) {
@@ -28,13 +25,13 @@ function solution(A, K) {
     }
 
     const buildCell = (num, position, maxLength) => {
-        const header = [];
+        const footer = [];
         const body = [];
         const numLength = maxLength - (num || '').length;
-        header.push('+');
+        footer.push('+');
         body.push('|');
         for (let i = 0; i < maxLength; i++) {
-            header.push('-');
+            footer.push('-');
             if (i < numLength) {
                 body.push(' ');
             } else if (i === numLength) {
@@ -42,10 +39,10 @@ function solution(A, K) {
             }
         }
         if (position === 'right') {
-            header.push('+');
+            footer.push('+');
             body.push('|');
         }
-        return [header, body];
+        return [footer, body];
     }
 
     const buildRow = (array, cellCount, maxLength) => {
@@ -94,13 +91,7 @@ function solution(A, K) {
             row.push(array[i]);
         }
         if (row.length) {
-            // if (row.length < cellCount && array.length > cellCount) {
-            //     for (let i = 0; i < cellCount - row.length; i++) {
-            //         row.push("");
-            //     }
-            // }
-            // table.push(buildRow(row, cellCount, maxLength));
-            table.push(buildRow(row, cellCount, maxLength));
+            table.push(buildRow(row, row.length, maxLength));
             row.length = 0;
         }
         return table.join('\n');
