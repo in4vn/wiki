@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T07:39:15.838Z
+date: 2024-02-14T09:17:38.075Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,6 +18,101 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # FormatArray
 ```javascript
+// you can write to stderr for debugging purposes, e.g.
+// process.stderr.write('this is a debug message');
+
+function solution(A, K) {
+    const len = A.length;
+    if (len < 0) {
+        return '';
+    }
+
+    const buildCell = (num, position, maxLength) => {
+        const header = [];
+        const body = [];
+        const numLength = maxLength - num.length;
+        header.push('+');
+        body.push('|');
+        for (let i = 0; i < maxLength; i++) {
+            header.push('-');
+            if (i < numLength) {
+                body.push(' ');
+            } else if (i === numLength) {
+                body.push(num);
+            }
+        }
+        if (position === 'right') {
+            header.push('+');
+            body.push('|');
+        }
+        return [header, body];
+    }
+
+    const buildRow = (array, cellCount, maxLength) => {
+        let header = [];
+        let body = [];
+        const max = array.length < cellCount ? array.length : cellCount;
+        for (let i = 0; i < max; i++) {
+            let position = 'center';
+            if (i === 0) {
+                position = 'left';
+            } else if (i === max - 1) {
+                position = 'right';
+            }
+            const [cellHeader, cellBody] = buildCell(array[i], position, maxLength);
+            header = header.concat(cellHeader);
+            body = body.concat(cellBody);
+        }
+        return header.join('') + '\n' + body.join("");
+    }
+
+    const buildFooter = (cellCount, maxLength) => {
+        const footer = [];
+        for (let i = 0; i < cellCount; i++) {
+            footer.push('+');
+            for (let j = 0; j < maxLength; j++) {
+                footer.push('-');
+            }
+            if (i === cellCount - 1) {
+                footer.push('+');
+            }
+        }
+        return footer.join('');
+    }
+
+    const buildTable = (array, cellCount) => {
+        const table = [];
+        const maxLength = array.reduce((res, num) => {
+            return Math.max(res, num.length);
+        }, 0);
+        const row = [];
+        for (let i = 0; i < len; i++) {
+            if (i % cellCount === 0 && row.length === cellCount) {
+                table.push(buildRow(row, cellCount, maxLength));
+                row.length = 0;
+            }
+            row.push(array[i]);
+        }
+        if (row.length) {
+            if (row.length < cellCount && array.length > cellCount) {
+                for (let i = 0; i < cellCount - row.length; i++) {
+                    row.push("");
+                }
+            }
+            table.push(buildRow(row, cellCount, maxLength));
+            // row.length = 0;
+        }
+        // const max = array.length < cellCount ? array.length : cellCount;
+        table.push(buildFooter(cellCount, maxLength));
+        return table.join('\n');
+    }
+
+    const arrayString = A.map((num) => num + "");
+    const res = buildTable(arrayString, K);
+
+    process.stdout.write(res);
+    // process.stderr.write(res);
+}
 ```
 
 # ForbiddenTriosSwaps
