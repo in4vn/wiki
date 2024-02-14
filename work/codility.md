@@ -2,13 +2,19 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-12T08:36:54.437Z
+date: 2024-02-14T02:51:38.809Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
 ---
 
 [CodeCheck > Mandatory](https://app.codility.com/dashboards/campaigns/#231674)
+
+- đọc và hiểu đề 
+- Luôn validate input: empty, 1 element, min và max của từng item trong array
+- Nếu kết quả không phụ thuộc kết quả tính toán, không cần thực sự tính toán, lưu phép tính là được 
+- Set to array: Array.from(set)
+- Array to set: new Set(array)
 
 # ForbiddenTriosSwaps
 
