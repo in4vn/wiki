@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T02:51:38.809Z
+date: 2024-02-14T07:34:40.438Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -21,51 +21,29 @@ dateCreated: 2024-01-28T08:26:29.363Z
 ```javascript
 function solution(S) {
     const len = S.length;
+    
+    // at least 3 chars are required to do a move
     if (len < 3 || len > 200000) {
         return 0;
     }
 
     const array = S.split("");
-    let aCount = 0;
-    let bCount = 0;
-    let move = 0;
-  
-    for (let i = 0; i < len; i++) {
-        if (array[i] === 'a') {
-            aCount ++;
-            bCount = 0;
-        } else {
-            bCount ++;
-            aCount = 0;
-        }
 
-        if (aCount === 3) {
-            if (array[i + 1] === 'a') {
-                array[i] = 'b';
-                aCount = 0;
-                bCount ++;
+    let count = 0;
+    for (let i = 0; i < len; i ++) {
+        const current = array[i];
+        if (current === array[i + 1] && current === array[i + 2]) {
+            const moved = current === 'a' ? 'b' : 'a';
+            if (current === array[i + 3]) {
+                array[i + 2] = moved;
             } else {
-                array[i - 1] = 'b';
-                aCount = 1;
-                bCount = 0;
+                array[i + 1] = moved;
             }
-            move ++;
-        }
-        if (bCount === 3) {
-            if (array[i + 1] === 'a') {
-                array[i] = 'b';
-                bCount = 0;
-                aCount ++;
-            } else {
-                array[i - 1] = 'b';
-                bCount = 1;
-                aCount = 0;
-            }
-            move ++;
+            count ++;
         }
     }
 
-    return move;
+    return count;
 }
 ```
 
