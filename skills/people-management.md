@@ -1,14 +1,16 @@
 ---
-title: People management
+title: Skills: People management
 description: 
 published: true
-date: 2024-02-14T02:48:34.796Z
+date: 2024-02-14T02:50:16.691Z
 tags: skills
 editor: markdown
 dateCreated: 2024-02-14T02:48:34.796Z
 ---
 
-# Books
+# Skills: People management
+
+## Books
 - [ ] Armstrong’s Handbook of Human Resource Management Practice
 - [ ] High Output Management
 - [ ] https://review.firstround.com/
