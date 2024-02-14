@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T09:17:38.075Z
+date: 2024-02-14T09:22:05.532Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,9 +18,6 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # FormatArray
 ```javascript
-// you can write to stderr for debugging purposes, e.g.
-// process.stderr.write('this is a debug message');
-
 function solution(A, K) {
     const len = A.length;
     if (len < 0) {
@@ -30,7 +27,7 @@ function solution(A, K) {
     const buildCell = (num, position, maxLength) => {
         const header = [];
         const body = [];
-        const numLength = maxLength - num.length;
+        const numLength = maxLength - (num || '').length;
         header.push('+');
         body.push('|');
         for (let i = 0; i < maxLength; i++) {
@@ -51,12 +48,11 @@ function solution(A, K) {
     const buildRow = (array, cellCount, maxLength) => {
         let header = [];
         let body = [];
-        const max = array.length < cellCount ? array.length : cellCount;
-        for (let i = 0; i < max; i++) {
+        for (let i = 0; i < cellCount; i++) {
             let position = 'center';
             if (i === 0) {
                 position = 'left';
-            } else if (i === max - 1) {
+            } else if (i === cellCount - 1) {
                 position = 'right';
             }
             const [cellHeader, cellBody] = buildCell(array[i], position, maxLength);
@@ -100,15 +96,15 @@ function solution(A, K) {
                 }
             }
             table.push(buildRow(row, cellCount, maxLength));
-            // row.length = 0;
+            row.length = 0;
         }
-        // const max = array.length < cellCount ? array.length : cellCount;
         table.push(buildFooter(cellCount, maxLength));
         return table.join('\n');
     }
 
     const arrayString = A.map((num) => num + "");
-    const res = buildTable(arrayString, K);
+    const cellCount = arrayString.length > K ? K : arrayString.length;
+    const res = buildTable(arrayString, cellCount);
 
     process.stdout.write(res);
     // process.stderr.write(res);
