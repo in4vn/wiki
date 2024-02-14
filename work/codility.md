@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T09:22:05.532Z
+date: 2024-02-14T09:27:12.984Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,6 +18,9 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # FormatArray
 ```javascript
+// you can write to stderr for debugging purposes, e.g.
+// process.stderr.write('this is a debug message');
+
 function solution(A, K) {
     const len = A.length;
     if (len < 0) {
@@ -46,7 +49,7 @@ function solution(A, K) {
     }
 
     const buildRow = (array, cellCount, maxLength) => {
-        let header = [];
+        let footer = [];
         let body = [];
         for (let i = 0; i < cellCount; i++) {
             let position = 'center';
@@ -55,14 +58,14 @@ function solution(A, K) {
             } else if (i === cellCount - 1) {
                 position = 'right';
             }
-            const [cellHeader, cellBody] = buildCell(array[i], position, maxLength);
-            header = header.concat(cellHeader);
+            const [cellFooter, cellBody] = buildCell(array[i], position, maxLength);
+            footer = footer.concat(cellFooter);
             body = body.concat(cellBody);
         }
-        return header.join('') + '\n' + body.join("");
+        return body.join("") + '\n' + footer.join('');
     }
 
-    const buildFooter = (cellCount, maxLength) => {
+    const buildHeader = (cellCount, maxLength) => {
         const footer = [];
         for (let i = 0; i < cellCount; i++) {
             footer.push('+');
@@ -82,6 +85,7 @@ function solution(A, K) {
             return Math.max(res, num.length);
         }, 0);
         const row = [];
+        table.push(buildHeader(cellCount, maxLength));
         for (let i = 0; i < len; i++) {
             if (i % cellCount === 0 && row.length === cellCount) {
                 table.push(buildRow(row, cellCount, maxLength));
@@ -90,15 +94,15 @@ function solution(A, K) {
             row.push(array[i]);
         }
         if (row.length) {
-            if (row.length < cellCount && array.length > cellCount) {
-                for (let i = 0; i < cellCount - row.length; i++) {
-                    row.push("");
-                }
-            }
+            // if (row.length < cellCount && array.length > cellCount) {
+            //     for (let i = 0; i < cellCount - row.length; i++) {
+            //         row.push("");
+            //     }
+            // }
+            // table.push(buildRow(row, cellCount, maxLength));
             table.push(buildRow(row, cellCount, maxLength));
             row.length = 0;
         }
-        table.push(buildFooter(cellCount, maxLength));
         return table.join('\n');
     }
 
