@@ -2,7 +2,7 @@
 title: Install Debian 12
 description: 
 published: true
-date: 2024-02-04T12:20:36.276Z
+date: 2024-02-14T07:41:21.300Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-04T03:47:48.647Z
@@ -93,3 +93,8 @@ sudo update-grub
 
 # reboot
 ```
+
+### Mac's style keymap for Linux
+
+Follow the guide on this page
+https://github.com/RedBearAK/toshy
