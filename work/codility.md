@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T07:16:02.666Z
+date: 2024-02-15T07:29:58.399Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,6 +18,33 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # SameDigitMerge
 ```javascript
+function solution(numbers) {
+    const len = numbers.length;
+    if (len < 1) {
+        return 0;
+    }
+
+    let found = 0;
+    for (let i = 0; i < len; i ++) {
+        const number = numbers[i];
+        if (number < 10) {
+            return 0;
+        }
+
+        const string = number + "";
+        const lastDigit = string.charAt(string.length - 1);
+        for (let j = 0; j < len; j ++) {
+            if (i !== j) {
+                const firstDigit = (numbers[j] + "").charAt(0);
+                if (lastDigit === firstDigit) {
+                    found ++;
+                }
+            }
+        }
+    }
+
+    return found;
+}
 ```
 
 # MonitorsDelivery
