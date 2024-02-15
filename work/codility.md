@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T07:11:38.890Z
+date: 2024-02-15T07:15:26.284Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -17,6 +17,9 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Array to set: new Set(array)
 
 # MonitorsDelivery
+
+Test cases
+- Same distance, but with different monitors => we sort by both distance and monitors
 
 ```javascript
 function solution(D, C, P) {
