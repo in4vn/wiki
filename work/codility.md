@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T07:43:11.322Z
+date: 2024-02-15T07:48:03.494Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -17,6 +17,9 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Array to set: new Set(array)
 
 # SameDigitMerge
+
+58%
+
 ```javascript
 function solution(numbers) {
     const len = numbers.length;
