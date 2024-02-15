@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T07:35:20.755Z
+date: 2024-02-15T07:43:11.322Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -35,11 +35,8 @@ function solution(numbers) {
 
         const lastDigit = string.charAt(string.length - 1);
         for (let j = 0; j < len; j ++) {
-            if (i !== j) {
-                const firstDigit = texts[j].charAt(0);
-                if (lastDigit === firstDigit) {
-                    found ++;
-                }
+            if (i !== j && texts[j].startsWith(lastDigit)) {
+                found ++;
             }
         }
     }
