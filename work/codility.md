@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T06:17:23.086Z
+date: 2024-02-15T06:20:33.933Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -32,7 +32,7 @@ function solution(A, K) {
     }
 
     const buildCell = (num, cellLength) => {
-        const numLength = cellLength - (num || '').length;
+        const numLength = cellLength - num.length;
 
         const body = [];
         body.push('|');
@@ -46,9 +46,9 @@ function solution(A, K) {
         return body.join("");
     }
 
-    const buildRow = (array, cellCount, cellLength) => {
+    const buildRow = (array, cellLength) => {
         let body = [];
-        for (let i = 0; i < cellCount; i++) {
+        for (let i = 0; i < array.length; i++) {
             body.push(buildCell(array[i], cellLength))
         }
         return body.join("") + '|';
@@ -80,9 +80,9 @@ function solution(A, K) {
             row.push(array[i]);
             if ((array.length && i % cellCount === cellCount - 1) || i === len - 1) {
                 // body
-                table.push(buildRow(row, cellCount, cellLength));
+                table.push(buildRow(row, cellLength));
                 // footer
-                table.push(buildHeaderFooter(cellCount, cellLength));
+                table.push(buildHeaderFooter(row.length, cellLength));
                 row.length = 0;
             }
         }
