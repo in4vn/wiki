@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-14T09:31:14.170Z
+date: 2024-02-15T06:14:14.679Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -31,80 +31,65 @@ function solution(A, K) {
         return '';
     }
 
-    const buildCell = (num, position, maxLength) => {
-        const footer = [];
+    const buildCell = (num, cellLength) => {
+        const numLength = cellLength - (num || '').length;
+
         const body = [];
-        const numLength = maxLength - (num || '').length;
-        footer.push('+');
         body.push('|');
-        for (let i = 0; i < maxLength; i++) {
-            footer.push('-');
+        for (let i = 0; i < cellLength; i++) {
             if (i < numLength) {
                 body.push(' ');
             } else if (i === numLength) {
                 body.push(num);
             }
         }
-        if (position === 'right') {
-            footer.push('+');
-            body.push('|');
-        }
-        return [footer, body];
+        return body.join("");
     }
 
-    const buildRow = (array, cellCount, maxLength) => {
-        let footer = [];
+    const buildRow = (array, cellCount, cellLength) => {
         let body = [];
         for (let i = 0; i < cellCount; i++) {
-            let position = 'center';
-            if (i === 0) {
-                position = 'left';
-            } else if (i === cellCount - 1) {
-                position = 'right';
-            }
-            const [cellFooter, cellBody] = buildCell(array[i], position, maxLength);
-            footer = footer.concat(cellFooter);
-            body = body.concat(cellBody);
+            body.push(buildCell(array[i], cellLength))
         }
-        return body.join("") + '\n' + footer.join('');
+        return body.join("") + '|' + '\n';
     }
 
-    const buildHeader = (cellCount, maxLength) => {
-        const footer = [];
+    const buildHeaderFooter = (cellCount, cellLength) => {
+        const hf = [];
         for (let i = 0; i < cellCount; i++) {
-            footer.push('+');
-            for (let j = 0; j < maxLength; j++) {
-                footer.push('-');
+            hf.push('+');
+            for (let j = 0; j < cellLength; j++) {
+                hf.push('-');
             }
             if (i === cellCount - 1) {
-                footer.push('+');
+                hf.push('+');
             }
         }
-        return footer.join('');
+        return hf.join('');
     }
 
     const buildTable = (array, cellCount) => {
-        const table = [];
-        const maxLength = array.reduce((res, num) => {
+        const cellLength = array.reduce((res, num) => {
             return Math.max(res, num.length);
         }, 0);
+        const table = [];
         const row = [];
-        table.push(buildHeader(cellCount, maxLength));
+        // header
+        table.push(buildHeaderFooter(cellCount, cellLength));
         for (let i = 0; i < len; i++) {
-            if (i % cellCount === 0 && row.length === cellCount) {
-                table.push(buildRow(row, cellCount, maxLength));
+            row.push(array[i]);
+            if ((array.length && i % cellCount === cellCount - 1) || i === len - 1) {
+                // body
+                table.push(buildRow(row, cellCount, cellLength));
+                // footer
+                table.push(buildHeaderFooter(cellCount, cellLength));
                 row.length = 0;
             }
-            row.push(array[i]);
-        }
-        if (row.length) {
-            table.push(buildRow(row, row.length, maxLength));
-            row.length = 0;
         }
         return table.join('\n');
     }
 
-    const arrayString = A.map((num) => num + "");
+    const arrayString = A.map(num => num + "");
     const cellCount = arrayString.length > K ? K : arrayString.length;
     const res = buildTable(arrayString, cellCount);
 
