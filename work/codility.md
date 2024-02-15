@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T06:24:08.257Z
+date: 2024-02-15T06:46:09.493Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -19,6 +19,35 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # MonitorsDelivery
 
 ```javascript
+function solution(D, C, P) {
+    if (D.length < 1 || C.length < 0 || P < 0) {
+        return 0;
+    }
+
+    const mapped = D.reduce((res, distance, index) => {
+        res.push({
+            distance,
+            monitors: C[index]
+        });
+        return res;
+    }, []);
+
+    const sorted = mapped.sort((a, b) => a.distance - b.distance);
+    let fulfilledOrders = 0;
+    let fulfilledMonitors = 0;
+
+    for (let i = 0; i < sorted.length; i ++) {
+        const { monitors } = sorted[i];
+        if (monitors <= P - fulfilledMonitors) {
+            fulfilledMonitors += monitors;
+            fulfilledOrders ++;
+        } else {
+            break;
+        }
+    }
+
+    return fulfilledOrders;
+}
 ```
 
 # FormatArray
