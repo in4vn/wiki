@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-15T07:29:58.399Z
+date: 2024-02-15T07:35:20.755Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -24,18 +24,19 @@ function solution(numbers) {
         return 0;
     }
 
+    const texts = numbers.map(number => number + "");
+
     let found = 0;
     for (let i = 0; i < len; i ++) {
-        const number = numbers[i];
-        if (number < 10) {
+        const string = texts[i];
+        if (string.length < 2) {
             return 0;
         }
 
-        const string = number + "";
         const lastDigit = string.charAt(string.length - 1);
         for (let j = 0; j < len; j ++) {
             if (i !== j) {
-                const firstDigit = (numbers[j] + "").charAt(0);
+                const firstDigit = texts[j].charAt(0);
                 if (lastDigit === firstDigit) {
                     found ++;
                 }
