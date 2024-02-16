@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T08:56:49.105Z
+date: 2024-02-16T09:00:51.637Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -29,7 +29,8 @@ function solution(S) {
     }
 
     let count = 0;
-    let string = S.replace(/.../g, '');
+    // remove ... chars
+    let string = S.replace(/\.\.\./g, '');
   	// remove .. chars at start of string
     string = string.substring(string.indexOf('X'));
     const segments = string.match(/.{1,3}/g) ?? [];
