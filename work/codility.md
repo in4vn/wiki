@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T06:54:14.799Z
+date: 2024-02-16T07:41:24.606Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -19,6 +19,32 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # SmallestDigitSum
 
 ```javascript
+function solution(N) {
+    if (N < 1 || N > 50) {
+        return 0;
+    }
+
+    if (N < 10) {
+        return N;
+    }
+
+    const getSumOfDigits = num => {
+        let sum = 0;
+        while (num !== 0) {
+            sum += num % 10;
+            num = Math.floor(num / 10);
+        }
+        return sum;
+    }
+
+    let i = 0;
+    while (1) {
+        if (getSumOfDigits(i) === N) {
+            return i;
+        }
+        i++;
+    }
+}
 ```
 
 # ShortestUniqueSubstring
