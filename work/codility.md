@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T09:11:59.763Z
+date: 2024-02-16T09:12:39.959Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -34,7 +34,6 @@ function solution(S) {
     let count = 0;
     let index = 0;
     while (index < len) {
-        console.log(segments[index])
         if (segments[index] === 'X') {
             count++;
             index += 3;
