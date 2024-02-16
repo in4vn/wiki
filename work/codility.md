@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T06:30:41.467Z
+date: 2024-02-16T06:53:01.768Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -19,6 +19,24 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # ShortestUniqueSubstring
 
 ```javascript
+function solution(S) {
+    const length = S.length;
+    if (length < 1 || length > 200) {
+        return 0;
+    }
+
+    for (let len = 1; len < length; len++) {
+        for (let pos = 0; pos < length; pos++) {
+            const substring = S.substring(pos, pos + len);
+            const subStringIndex = S.indexOf(substring);
+            if (S.indexOf(substring, subStringIndex + 1) === -1) {
+                return len;
+            }
+        }
+    }
+
+    return length;
+}
 ```
 
 # SameDigitMerge
