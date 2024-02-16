@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T07:41:24.606Z
+date: 2024-02-16T07:43:19.723Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -28,7 +28,7 @@ function solution(N) {
         return N;
     }
 
-    const getSumOfDigits = num => {
+    const getDigitSum = num => {
         let sum = 0;
         while (num !== 0) {
             sum += num % 10;
@@ -39,7 +39,7 @@ function solution(N) {
 
     let i = 0;
     while (1) {
-        if (getSumOfDigits(i) === N) {
+        if (getDigitSum(i) === N) {
             return i;
         }
         i++;
