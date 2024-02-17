@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T09:00:43.892Z
+date: 2024-02-17T09:41:34.448Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -658,39 +658,5 @@ function solution(N) {
     }
 
     return result.join("");
-}
-
-
-function solution(N) {
-    if (N < 1 || N > 200000) {
-        return '';
-    }
-
-    const chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    const charCount = chars.length;
-
-    let repeat;
-    let max;
-    if (N <= charCount) {
-        repeat = 1;
-        max = N;
-    } else {
-        for (let i = 2; i < charCount; i++) {
-            if (N % i === 0) {
-                repeat = i;
-                max = N/i;
-                break;
-            }
-        }
-    }
-
-    const found = [];
-    for (let i = 0; i < max; i++) {
-        for (let j = 0; j < repeat; j++) {
-            found.push(chars[i]);
-        }
-    }
-
-    return found.join("")
 }
 ```
