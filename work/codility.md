@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T08:08:28.091Z
+date: 2024-02-17T08:09:59.164Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -176,86 +176,7 @@ function solution(S) {
 
 # SameDigitMerge
 
-58%
-
 ```javascript
-function solution(numbers) {
-    const len = numbers.length;
-    if (len < 1) {
-        return 0;
-    }
-
-    const texts = numbers.map(number => number + "");
-
-    let found = 0;
-    for (let i = 0; i < len; i ++) {
-        const string = texts[i];
-        if (string.length < 2) {
-            return 0;
-        }
-
-        const lastDigit = string.charAt(string.length - 1);
-        for (let j = 0; j < len; j ++) {
-            if (i !== j && texts[j].startsWith(lastDigit)) {
-                found ++;
-            }
-        }
-    }
-
-    return found;
-}
-```
-
-```javascript
-function solution(numbers) {
-    const len = numbers.length;
-    if (len < 1 || len > 100000) {
-        return 0;
-    }
-
-    const getFirstDigit = number => {
-        let first = parseInt(number/10);
-        while (first > 9) {
-            first = parseInt(first/10);
-        }
-        return first;
-    }
-
-    const getLastDigit = number => {
-        return number % 10;
-    }
-
-    let found = 0;
-    for (let i = 0; i < len; i++) {
-        const number = numbers[i];
-        if (number < 10) {
-            return 0;
-        }
-        const last = getLastDigit(number);
-
-        for (let j = 0; j < len; j++) {
-            if (i === j) {
-                continue;
-            }
-            const number2 = numbers[j];
-            if (number2 < 10) {
-                return 0;
-            }
-            const first = getFirstDigit(number2);
-            if (last === first) {
-                found ++;
-            }
-        }
-    }
-
-    return found;
-}
-```
-
-```javascript
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
-
 function solution(numbers) {
     const len = numbers.length;
     if (len < 1 || len > 100000) {
