@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T07:51:21.272Z
+date: 2024-02-17T08:08:28.091Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -246,6 +246,45 @@ function solution(numbers) {
                 found ++;
             }
         }
+    }
+
+    return found;
+}
+```
+
+```javascript
+// you can write to stdout for debugging purposes, e.g.
+// console.log('this is a debug message');
+
+function solution(numbers) {
+    const len = numbers.length;
+    if (len < 1 || len > 100000) {
+        return 0;
+    }
+
+    const getFirstLastDigit = number => {
+        let first = parseInt(number/10);
+        while (first > 9) {
+            first = parseInt(first/10);
+        }
+        return [first, number % 10];
+    }
+
+    const firsts = {};
+    const lasts = {};
+
+    for (let i = 0; i < len; i++) {
+        const [first, last] = getFirstLastDigit(numbers[i]);
+        firsts[first] = (firsts[first] || 0) + 1;
+        lasts[last] = (lasts[last] || 0) + 1;
+    }
+
+    let found = 0;
+    const keys = Object.keys(lasts);
+    for (let i = 0; i < keys.length; i++) {
+        const key = keys[i];
+        const value = lasts[key];
+        found += value * (firsts[key] || 0);
     }
 
     return found;
