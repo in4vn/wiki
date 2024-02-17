@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T07:24:13.735Z
+date: 2024-02-17T07:42:37.488Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -197,6 +197,54 @@ function solution(numbers) {
         const lastDigit = string.charAt(string.length - 1);
         for (let j = 0; j < len; j ++) {
             if (i !== j && texts[j].startsWith(lastDigit)) {
+                found ++;
+            }
+        }
+    }
+
+    return found;
+}
+```
+
+```javascript
+function solution(numbers) {
+    const len = numbers.length;
+    if (len < 1 || len > 100000) {
+        return 0;
+    }
+
+    const getFirstLastDigit = number => {
+        let first = parseInt(number/10);
+        while (first > 9) {
+            first = parseInt(first/10);
+        }
+        return [first, number % 10];
+    }
+
+    let found = 0;
+    for (let i = 0; i < len; i++) {
+        const number = numbers[i];
+        if (number < 10) {
+            return 0;
+        }
+        const [first, last] = getFirstLastDigit(number);
+        if (first === last) {
+            return 0;
+        }
+
+        for (let j = 0; j < len; j++) {
+            if (i === j) {
+                continue;
+            }
+            const number2 = numbers[j];
+            if (number2 < 10) {
+                return 0;
+            }
+            const [first2, last2] = getFirstLastDigit(number2);
+            if (first2 === last2) {
+                return 0;
+            }
+            if (last === first2) {
                 found ++;
             }
         }
