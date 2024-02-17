@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T08:09:59.164Z
+date: 2024-02-17T08:46:25.488Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -407,56 +407,24 @@ function solution(A) {
 
 # EraseOneLetter
 
-50%
-
 ```javascript
 function solution(S) {
     const len = S.length;
-    if (len < 2 || len > 100000) {
+      if (len < 2 || len > 100000) {
         return '';
     }
+  
+    const array = S.split("");
 
-    const removed = [];
     for (let i = 0; i < len; i++) {
-        const string = S.substr(0, i) + S.substr(i + 1);
-        removed.push(string);
+        const current = array[i];
+        const next = array[i+1];
+        if (next && current > next) {
+            return S.replace(current, '');
+        }
     }
 
-    const sorted = removed.sort((a, b) => a.localeCompare(b));
-    return sorted[0];
-}
-
-function solution(S) {
-    const len = S.length;
-    if (len < 2 || len > 100000) {
-        return '';
-    }
-
-    const removed = [];
-    const original = S.split("");
-    for (let i = 0; i < len; i++) {
-        removed.push(original.filter((char, index) => index !== i).join(""));
-    }
-
-    const sorted = removed.sort((a, b) => a.localeCompare(b));
-    return sorted[0];
-}
-
-function solution(S) {
-    const len = S.length;
-    if (len < 2 || len > 100000) {
-        return '';
-    }
-
-    const removed = [];
-    for (let i = 0; i < len; i++) {
-        const string = S.split("");
-        string[i] = "";
-        removed.push(string.join(""));
-    }
-
-    const sorted = removed.sort((a, b) => a.localeCompare(b));
-    return sorted[0];
+    return S.substring(0, len -1);
 }
 ```
 
