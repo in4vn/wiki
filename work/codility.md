@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T07:14:59.537Z
+date: 2024-02-17T07:21:09.458Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -28,8 +28,9 @@ function solution(S) {
     const array = S.split("");
     let count = 0;
     for (let i = 0; i < len; i++) {
-        array.push(array.shift());
-        count += array[0] === array[len - 1] ? 1 : 0; 
+        const next = array[i + 1] || array[0];
+      	// we don't move array element, but compare the index
+        count += array[i] === next ? 1 : 0; 
     }
 
     return count;
