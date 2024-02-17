@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T07:21:09.458Z
+date: 2024-02-17T07:24:13.735Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -13,6 +13,7 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - đọc và hiểu đề 
 - Luôn validate input: empty, 1 element, min và max của từng item trong array
 - Nếu kết quả không phụ thuộc kết quả tính toán, không cần thực sự tính toán, lưu phép tính là được 
+- Calculate using the index of array if possible, don't need to move/add/delete the elements of array
 - Set to array: Array.from(set)
 - Array to set: new Set(array)
 
