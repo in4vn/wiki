@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-17T07:42:37.488Z
+date: 2024-02-17T07:51:21.272Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -213,12 +213,16 @@ function solution(numbers) {
         return 0;
     }
 
-    const getFirstLastDigit = number => {
+    const getFirstDigit = number => {
         let first = parseInt(number/10);
         while (first > 9) {
             first = parseInt(first/10);
         }
-        return [first, number % 10];
+        return first;
+    }
+
+    const getLastDigit = number => {
+        return number % 10;
     }
 
     let found = 0;
@@ -227,10 +231,7 @@ function solution(numbers) {
         if (number < 10) {
             return 0;
         }
-        const [first, last] = getFirstLastDigit(number);
-        if (first === last) {
-            return 0;
-        }
+        const last = getLastDigit(number);
 
         for (let j = 0; j < len; j++) {
             if (i === j) {
@@ -240,11 +241,8 @@ function solution(numbers) {
             if (number2 < 10) {
                 return 0;
             }
-            const [first2, last2] = getFirstLastDigit(number2);
-            if (first2 === last2) {
-                return 0;
-            }
-            if (last === first2) {
+            const first = getFirstDigit(number2);
+            if (last === first) {
                 found ++;
             }
         }
