@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-16T09:12:39.959Z
+date: 2024-02-17T06:55:00.562Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -15,6 +15,11 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Nếu kết quả không phụ thuộc kết quả tính toán, không cần thực sự tính toán, lưu phép tính là được 
 - Set to array: Array.from(set)
 - Array to set: new Set(array)
+
+# ABString
+
+```javascript
+```
 
 # AsphaltPatches
 
