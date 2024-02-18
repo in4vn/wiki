@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-18T06:31:49.637Z
+date: 2024-02-18T07:17:06.857Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,6 +20,28 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # HolidayTrip
 
 ```javascript
+function solution(P, S) {
+    const len = P.length;
+    if (len < 1 || len > 100000 || S.length < 1 || S.length > 100000) {
+        return 0
+    }
+
+  	// sort seats from biggest to smallest
+    S.sort((a, b) => b - a);
+  
+  	// get total number of people
+    let people = P.reduce((r, p) => r + p, 0);
+    
+    let cars = 0;
+    for (let i = 0; i < len; i++) {
+        if (people > 0) {
+            people -= S[i];
+            cars ++;
+        }
+    }
+
+    return cars;
+}
 ```
 
 # EndsTheSame
