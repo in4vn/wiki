@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-18T08:11:47.910Z
+date: 2024-02-18T08:26:47.933Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,7 +20,43 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # PlayersMovements
 
 ```javascript
+// you can write to stdout for debugging purposes, e.g.
+// console.log('this is a debug message');
 
+function solution(S) {
+    const len = S.length;
+    if (len < 0 || len > 50) {
+        return 0;
+    }
+
+    const moves = S.split('');
+    const players = new Array(len).fill(true);
+    let count = 0;
+    for (let i = 0; i < len; i++) {
+        const move = moves[i];
+        if (move === '<') {
+            if (!players[i - 1]) {
+                players[i - 1] = true;
+                players[i] = false;
+                count ++;
+            }
+        } else if (move === '>') {
+            if (!players[i + 1]) {
+                players[i + 1] = true;
+                players[i] = false;
+                count ++;
+            }
+        } else if (move === '^') {
+            players[i] = false;
+            count ++;
+        } else {
+            players[i] = false;
+            count ++;
+        }
+    }
+
+    return count;
+}
 ```
 
 # Missions
