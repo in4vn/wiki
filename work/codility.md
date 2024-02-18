@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-18T07:39:15.989Z
+date: 2024-02-18T07:55:29.405Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -28,17 +28,15 @@ function solution(D, X) {
 
     let days = [];
     for (let i = 0; i < len; i++) {
-        let lastDay = days[days.length - 1];
-        if (days.length === 0) {
-            lastDay = [];
-            days[0] = lastDay;
-        }
-        
         const difficulty = D[i];
-        if (lastDay.find(d => Math.abs(d - difficulty) > X)) {
-            days.push([difficulty])
+        let [lastMin, lastMax] = days.length ? days[days.length - 1] : [difficulty, difficulty];
+                
+        if (Math.abs(lastMin - difficulty) > X || Math.abs(lastMax - difficulty) > X) {
+            days.push([difficulty, difficulty]);
         } else {
-            lastDay.push(difficulty);   
+          	const min = Math.min(lastMin, difficulty);
+        		const max = Math.max(lastMax, difficulty);
+            days[days.length ? days.length - 1 : 0] = [min, max];
         }
     }
 
