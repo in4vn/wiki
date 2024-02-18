@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-18T07:18:41.524Z
+date: 2024-02-18T07:39:15.989Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,6 +20,30 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # Missions
 
 ```javascript
+function solution(D, X) {
+    const len = D.length;
+    if (X < 0 || X > 1000000000 || len < 1 || len > 200000) {
+        return 0;
+    }
+
+    let days = [];
+    for (let i = 0; i < len; i++) {
+        let lastDay = days[days.length - 1];
+        if (days.length === 0) {
+            lastDay = [];
+            days[0] = lastDay;
+        }
+        
+        const difficulty = D[i];
+        if (lastDay.find(d => Math.abs(d - difficulty) > X)) {
+            days.push([difficulty])
+        } else {
+            lastDay.push(difficulty);   
+        }
+    }
+
+    return days.length;
+}
 ```
 
 # HolidayTrip
