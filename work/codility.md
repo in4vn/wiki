@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-18T07:55:29.405Z
+date: 2024-02-18T08:11:47.910Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -16,6 +16,12 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Calculate using the index of array if possible, don't need to move/add/delete the elements of array
 - Set to array: Array.from(set)
 - Array to set: new Set(array)
+
+# PlayersMovements
+
+```javascript
+
+```
 
 # Missions
 
