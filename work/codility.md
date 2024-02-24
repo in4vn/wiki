@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-24T07:22:13.786Z
+date: 2024-02-24T07:23:26.549Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,9 +20,6 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # SortedTwoLettersWord
 
 ```javascript
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
-
 function solution(S) {
     const len = S.length;
     if (len < 1) { return 0; }
