@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-24T06:50:08.420Z
+date: 2024-02-24T07:22:13.786Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,6 +20,44 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # SortedTwoLettersWord
 
 ```javascript
+// you can write to stdout for debugging purposes, e.g.
+// console.log('this is a debug message');
+
+function solution(S) {
+    const len = S.length;
+    if (len < 1) { return 0; }
+    
+    const getFirstIndex = (items, item) => items.findIndex(_item => item === _item);
+    const getLastIndex = (items, item) => items.reduce((res, _item, index) => {
+        return item === _item ? index : res;
+    }, -1);
+
+    const array = S.split("");
+    let countA = 0;
+    let removeA = 0;
+    let countB = 0;
+    let removeB = 0;
+    const firstIndexOfB = getFirstIndex(array, 'B');
+    const lastIndexOfA = getLastIndex(array, 'A');
+
+    for (let i = 0; i < len; i++) {
+        const char = array[i];
+        if (char === 'A') { 
+            countA++;
+            if (i > firstIndexOfB) {
+                removeA++;
+            }
+        }
+        else if (char === 'B') { 
+            countB++;
+            if (i < lastIndexOfA) {
+                removeB++;
+            }
+        }
+    }
+
+    return Math.min(countA, countB, removeA, removeB);
+}
 ```
 
 # PlayersMovements
@@ -147,10 +185,15 @@ function solution(S) {
     if (len < 0) {
         return true;
     }
+  
+    const getFirstIndex = (items, item) => items.findIndex(_item => item === _item);
+    const getLastIndex = (items, item) => items.reduce((res, _item, index) => {
+        return item === _item ? index : res;
+    }, -1);
 
     const array = S.split("");
-    const firstIndexOfB = array.findIndex(item => item === 'b');
-    const lastIndexOfA = array.indexOf('a', firstIndexOfB);
+    const firstIndexOfB = getFirstIndex(array, 'b');
+    const lastIndexOfA = getLastIndex(array, 'a');
     return firstIndexOfB === -1 || lastIndexOfA < firstIndexOfB
 }
 ```
