@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-24T07:23:26.549Z
+date: 2024-02-24T08:12:19.852Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,41 +20,52 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # SortedTwoLettersWord
 
 ```javascript
+// you can write to stdout for debugging purposes, e.g.
+// console.log('this is a debug message');
+
 function solution(S) {
     const len = S.length;
-    if (len < 1) { return 0; }
-    
-    const getFirstIndex = (items, item) => items.findIndex(_item => item === _item);
-    const getLastIndex = (items, item) => items.reduce((res, _item, index) => {
-        return item === _item ? index : res;
-    }, -1);
+    if (len < 1) {
+        return 0;
+    }
 
     const array = S.split("");
     let countA = 0;
-    let removeA = 0;
+    let countRemoveA = 0;
+    let countActionA = 0;
     let countB = 0;
-    let removeB = 0;
-    const firstIndexOfB = getFirstIndex(array, 'B');
-    const lastIndexOfA = getLastIndex(array, 'A');
+    let countRemoveB = 0;
+    let countActionB = 0;
 
     for (let i = 0; i < len; i++) {
-        const char = array[i];
-        if (char === 'A') { 
+        const prev = array[i - 1];
+        if (array[i] === 'A') {
             countA++;
-            if (i > firstIndexOfB) {
-                removeA++;
+            if (prev && prev === 'B') {
+                countActionB += countRemoveB;
+                countRemoveB = 0;
             }
-        }
-        else if (char === 'B') { 
+        } else {
             countB++;
-            if (i < lastIndexOfA) {
-                removeB++;
-            }
+            countRemoveB++;
         }
     }
 
-    return Math.min(countA, countB, removeA, removeB);
+        for (let i = len - 1; i >= 0; i--) {
+            const next = array[i + 1];
+            if (array[i] === 'B') {
+                if (next && next === 'A') {
+                    countActionA += countRemoveA;
+                    countRemoveA = 0;
+                }
+            } else {
+                countRemoveA++;
+            }
+        }
+
+    return Math.min(countA, countB, countActionA, countActionB);
 }
+
 ```
 
 # PlayersMovements
