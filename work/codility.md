@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-25T06:35:27.733Z
+date: 2024-02-25T08:00:08.728Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -20,6 +20,32 @@ dateCreated: 2024-01-28T08:26:29.363Z
 # DiceRolls
 
 ```javascript
+function solution(A, F, M) {
+    const lenA = A.length;
+    if (lenA < 1 || F < 1 || M > 6 || M < 1) return [0];
+
+    const sumArray = array => array.reduce((res, item) => res + item, 0);
+
+    const sumA = sumArray(A);
+    const sum = M * (F + lenA);
+    let missing = sum - sumA;
+
+    if (missing < 1) return [0];
+    if (F * 6 < missing) return [0];
+    if (F === 1) return [missing];
+
+    const res = new Array(F).fill(1);
+    let index = 0;
+    while (sumArray(res) !== missing) {
+        const num = res[index] + 1;
+        if (num <= 6) {
+            res[index] = num;
+        } else {
+            index++;
+        }
+    }
+    return res;
+}
 ```
 
 # SortedTwoLettersWord
