@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-24T08:12:19.852Z
+date: 2024-02-25T06:29:54.115Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -19,10 +19,9 @@ dateCreated: 2024-01-28T08:26:29.363Z
 
 # SortedTwoLettersWord
 
-```javascript
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
+30%
 
+```javascript
 function solution(S) {
     const len = S.length;
     if (len < 1) {
@@ -54,10 +53,10 @@ function solution(S) {
         for (let i = len - 1; i >= 0; i--) {
             const next = array[i + 1];
             if (array[i] === 'B') {
-                if (next && next === 'A') {
-                    countActionA += countRemoveA;
                     countRemoveA = 0;
-                }
+                      if (next && next === 'A') {
+                    countActionA += countRemoveA;
+          }
             } else {
                 countRemoveA++;
             }
@@ -65,7 +64,6 @@ function solution(S) {
 
     return Math.min(countA, countB, countActionA, countActionB);
 }
-
 ```
 
 # PlayersMovements
