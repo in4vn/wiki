@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-25T06:29:54.115Z
+date: 2024-02-25T06:31:50.751Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -53,10 +53,10 @@ function solution(S) {
         for (let i = len - 1; i >= 0; i--) {
             const next = array[i + 1];
             if (array[i] === 'B') {
-                    countRemoveA = 0;
-                      if (next && next === 'A') {
+                if (next && next === 'A') {
                     countActionA += countRemoveA;
-          }
+                    countRemoveA = 0;
+                }
             } else {
                 countRemoveA++;
             }
