@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-25T06:31:50.751Z
+date: 2024-02-25T06:35:27.733Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -16,6 +16,11 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Calculate using the index of array if possible, don't need to move/add/delete the elements of array
 - Set to array: Array.from(set)
 - Array to set: new Set(array)
+
+# DiceRolls
+
+```javascript
+```
 
 # SortedTwoLettersWord
 
