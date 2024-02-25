@@ -2,7 +2,7 @@
 title: Codility
 description: 
 published: true
-date: 2024-02-25T08:00:08.728Z
+date: 2024-02-25T08:05:53.084Z
 tags: work
 editor: markdown
 dateCreated: 2024-01-28T08:26:29.363Z
@@ -18,6 +18,8 @@ dateCreated: 2024-01-28T08:26:29.363Z
 - Array to set: new Set(array)
 
 # DiceRolls
+
+57%
 
 ```javascript
 function solution(A, F, M) {
