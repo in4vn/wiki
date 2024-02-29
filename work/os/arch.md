@@ -2,13 +2,13 @@
 title: Arch linux
 description: 
 published: true
-date: 2024-02-29T06:53:29.855Z
+date: 2024-02-29T06:53:52.507Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-29T04:15:54.071Z
 ---
 
-# Install Arch linux
+# Install Arch Linux
 
 https://itsfoss.com/install-arch-linux/
 
