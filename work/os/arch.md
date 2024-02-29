@@ -2,7 +2,7 @@
 title: Install Arch Linux
 description: 
 published: true
-date: 2024-02-29T08:34:38.160Z
+date: 2024-02-29T08:35:58.327Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-29T04:15:54.071Z
@@ -45,6 +45,13 @@ Follow the guide on this page
 https://github.com/RedBearAK/toshy
 
 If after installed, it's still not working
+
+Install all 3 extensions
+
+- 'Xremap' (try this on older GNOME shells)
+- 'Window Calls Extended'
+- 'Focused Window D-Bus'
+
 
 ```bash
 nano ~/.config/toshy/toshy_config.py
