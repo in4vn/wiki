@@ -2,7 +2,7 @@
 title: Install Debian 12
 description: 
 published: true
-date: 2024-02-14T07:41:21.300Z
+date: 2024-02-29T02:24:25.894Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-04T03:47:48.647Z
@@ -34,6 +34,7 @@ dd if=<path-to-dowloaded-iso-file> of=/dev/disk4 bs=1m
 - Boot from USB Drive
 - Go to Bios settings (press F12 while your laptop booting)
 - Select boot from your USB drive
+	- Note: If your laptop won't boot from usb, try to disable `Secure Boot`
 - Follow steps to install
 
 ## Install Fcitx Unikey
