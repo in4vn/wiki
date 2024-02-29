@@ -1,8 +1,8 @@
 ---
-title: Arch linux
+title: Install Arch Linux
 description: 
 published: true
-date: 2024-02-29T06:53:52.507Z
+date: 2024-02-29T07:02:58.066Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-29T04:15:54.071Z
