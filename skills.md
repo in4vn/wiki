@@ -2,7 +2,7 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-03-02T06:51:33.119Z
+date: 2024-03-02T07:03:52.455Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
@@ -12,7 +12,7 @@ dateCreated: 2024-01-21T07:58:00.908Z
 https://talent.vn/toan-tap-tu-dien-nang-luc
 
 - [Communication](/skills/communication)
-- [Conflict Resolution](/skills/conflict-resolution)
+- [Conflict resolution](/skills/conflict-resolution)
 - [Delegation](/skills/delegation)
 - [Influencing](/skills/influencing)
 
@@ -24,17 +24,21 @@ https://talent.vn/toan-tap-tu-dien-nang-luc
 - [[Skills: Open communication]] - TBD
 - [[Skills: Organization]] - TBD
 
-- [People Management](/skills/people-management)
+- [People management](/skills/people-management)
 
 - [[Skills: Positivity]] - TBD
 
-- [Problem Solving](/skills/problem-solving)
+- [Problem solving](/skills/problem-solving)
 
 - [[Skills: Recognizing potential]] - TBD
 - [[Skills: Reliability]] - TBD
 - [[Skills: Responsibility]] - TBD
+
+- [Risk management](/skills/risk-management)
+
 - [[Skills: Strategic thinking]] - TBD
-- [[Skills: Time management]] - TBD
+
+- [Time management](/skills/time-management)
 
 
 https://scanlibs.com/ 
