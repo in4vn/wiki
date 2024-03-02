@@ -2,11 +2,48 @@
 title: Skills: Conflict resolution
 description: 
 published: true
-date: 2024-01-27T03:00:39.829Z
+date: 2024-03-02T07:10:39.633Z
 tags: skills
 editor: markdown
 dateCreated: 2024-01-27T03:00:39.829Z
 ---
+
+# Levels
+## Mức độ 5 - Mức độ xuất sắc
+
+Ở mức độ này, cá nhân chủ động vận dụng được kĩ năng này trong cả những tình huống đặc biệt khó khăn. Cá nhân có thể tự tin truyền đạt kĩ năng này cho người khác.
+
+- Có khả năng thúc đẩy những căng thẳng và tranh luận có lợi cho tổ chức; giữ mức độ căng thẳng trong tầm kiểm soát
+- Dự đoán được những xung đột có thể xảy ra ở quy mô tổ chức, có phương án định hướng, ngăn chặn và giải quyết xung đột bằng thái độ mang tính xây dựng
+
+## Mức độ 4 - Mức độ tốt
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khá khó khăn, mà hầu như không cần hướng dẫn.
+
+- Dự đoán và xây dựng được chiến lược ngăn chặn và giải quyết xung đột ở quy mô tổ chức
+
+## Mức độ 3 - Mức độ khá
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khó khăn, dù đôi khi vẫn cần được chỉ dẫn từ người khác.
+
+- Dự đoán được những xung đột có thể xảy ra, có có biện pháp để ngăn chặn, giảm thiểu hậu quả của xung đột
+- Cổ vũ mọi người hạn chế những xung đột cá nhân không cần thiết
+
+## Mức độ 2 - Mức độ cơ bản
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống với độ khó trung bình và vẫn thường cần được hỗ trợ, hướng dẫn từ người khác.
+
+- Chủ động tiếp nhận những quan điểm khác nhau, đề xuất được phương án hòa giải xung đột trong đội nhóm
+- Cổ vũ mọi người hạn chế những xung đột cá nhân không cần thiết
+
+## Mức độ 1 - Mức độ kém
+
+Ở mức độ này, cá nhân chỉ vận dụng được năng lực trong những tình huống cơ bản nhất và sẽ cần rất nhiều chỉ dẫn từ người khác
+
+- Nhận định được xung đột giữa các cá nhân và đội nhóm
+- Cổ vũ mọi người hòa giải xung đột
+
+# Overview
 
 - A great leader not only knows how to avoid conflicts in the workplace but can also resolve them in an efficient and timely manner. While resolving conflicts, the leader stays level-headed and decides analytically.
 - Some of the conflict resolution skills that you can learn and practice are:
