@@ -2,7 +2,7 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-03-02T06:51:19.388Z
+date: 2024-03-02T06:51:33.119Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
@@ -28,7 +28,7 @@ https://talent.vn/toan-tap-tu-dien-nang-luc
 
 - [[Skills: Positivity]] - TBD
 
-- [Problem solving](/skills/problem-solving)
+- [Problem Solving](/skills/problem-solving)
 
 - [[Skills: Recognizing potential]] - TBD
 - [[Skills: Reliability]] - TBD
