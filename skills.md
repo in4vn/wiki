@@ -2,7 +2,7 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-03-02T07:14:48.957Z
+date: 2024-03-02T07:18:34.121Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
@@ -37,9 +37,7 @@ https://talent.vn/toan-tap-tu-dien-nang-luc
 - [[Skills: Responsibility]] - TBD
 
 - [Risk management](/skills/risk-management)
-
-- [[Skills: Strategic thinking]] - TBD
-
+- [Strategic thinking](/skills/strategic-thinking)
 - [Time management](/skills/time-management)
 
 
