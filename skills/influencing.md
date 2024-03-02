@@ -2,7 +2,7 @@
 title: Skills: Influencing
 description: 
 published: true
-date: 2024-01-27T03:12:49.823Z
+date: 2024-03-02T07:07:59.402Z
 tags: skills
 editor: markdown
 dateCreated: 2024-01-27T03:11:07.155Z
@@ -15,38 +15,47 @@ dateCreated: 2024-01-27T03:11:07.155Z
 
 # Levels
 
-## Mức độ 1 - Mức độ kém
-
-- Ở mức độ này, cá nhân chỉ vận dụng được năng lực trong những tình huống cơ bản nhất và sẽ cần rất nhiều chỉ dẫn từ người khác
-- Có khả năng bảo vệ ý kiến cá nhân, đưa ra đề xuất nhưng không thực sự thuyết phục
-- Còn e ngại, chưa tự tin vào bản thân
-
-## Mức độ 2 - Mức độ cơ bản
-- Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống với độ khó trung bình và vẫn thường cần được hỗ trợ, hướng dẫn từ người khác.  
-- Có khả năng thuyết phục, bảo vệ ý kiến cá nhân
-- Nhận được sự tôn trọng, lắng nghe từ mọi người
-
-## Mức độ 3 - Mức độ khá
-- Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khó khăn, dù đôi khi vẫn cần được chỉ dẫn từ người khác.  
-- Tạo được mối quan hệ tốt với mọi người
-- Tích cực tham dự đóng góp trong các cuộc thảo luận, các hoạt động quan trọng
-- Có khả năng đưa ra các đề xuất thuyết phục, có hiệu quả
-
-## Mức độ 4 - Mức độ tốt
-- Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khá khó khăn, mà hầu như không cần hướng dẫn.
-- Tạo được uy tín trong tổ chức và các bên liên quan
-- Luôn đóng vai trò chủ động trong các buổi gặp gỡ, thảo luận, tranh luận
-- Tự tin thể hiện quan điểm và tài năng trước đám đông
-- Nghiêm túc thực hiện các chế độ, chính sách của tổ chức
-
 ## Mức độ 5 - Mức độ xuất sắc
-- Ở mức độ này, cá nhân chủ động vận dụng được kĩ năng này trong cả những tình huống đặc biệt khó khăn. Cá nhân có thể tự tin truyền đạt kĩ năng này cho người khác.  
+
+Ở mức độ này, cá nhân chủ động vận dụng được kĩ năng này trong cả những tình huống đặc biệt khó khăn. Cá nhân có thể tự tin truyền đạt kĩ năng này cho người khác.
+
 - Xây dựng được mạng lưới quan hệ rộng, được chào đón rộng rãi
 - Nắm rõ được chiến lược thuyết phục trực tiếp và gián tiếp
 - Luôn đóng vai trò cố vấn, người đứng đầu trong các kế hoạch quan trọng
 - Có ý chí kiên định, nhận được sự ủng hộ của tất cả mọi người
 - Gương mẫu đi đầu trong cách hoạt động, phong trào của tổ chức
 - Mọi ý kiến, đề xuất cá nhân đều được đề cao và áp dụng triệt để
+
+## Mức độ 4 - Mức độ tốt
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khá khó khăn, mà hầu như không cần hướng dẫn.
+
+- Tạo được uy tín trong tổ chức và các bên liên quan
+- Luôn đóng vai trò chủ động trong các buổi gặp gỡ, thảo luận, tranh luận
+- Tự tin thể hiện quan điểm và tài năng trước đám đông
+- Nghiêm túc thực hiện các chế độ, chính sách của tổ chức
+
+## Mức độ 3 - Mức độ khá
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống khó khăn, dù đôi khi vẫn cần được chỉ dẫn từ người khác.
+
+- Tạo được mối quan hệ tốt với mọi người
+- Tích cực tham dự đóng góp trong các cuộc thảo luận, các hoạt động quan trọng
+- Có khả năng đưa ra các đề xuất thuyết phục, có hiệu quả
+
+## Mức độ 2 - Mức độ cơ bản
+
+Ở mức độ này, cá nhân có thể vận dụng được năng lực trong những tình huống với độ khó trung bình và vẫn thường cần được hỗ trợ, hướng dẫn từ người khác.
+
+- Có khả năng thuyết phục, bảo vệ ý kiến cá nhân
+- Nhận được sự tôn trọng, lắng nghe từ mọi người
+
+## Mức độ 1 - Mức độ kém
+
+Ở mức độ này, cá nhân chỉ vận dụng được năng lực trong những tình huống cơ bản nhất và sẽ cần rất nhiều chỉ dẫn từ người khác
+
+- Có khả năng bảo vệ ý kiến cá nhân, đưa ra đề xuất nhưng không thực sự thuyết phục
+- Còn e ngại, chưa tự tin vào bản thân
 
 # Cách rèn luyện kỹ năng tạo ảnh hưởng
 ## Trở nên năng động và tích cực
