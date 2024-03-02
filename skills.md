@@ -2,14 +2,12 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-03-02T07:29:11.526Z
+date: 2024-03-02T07:30:15.921Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
 ---
 
-
-https://talent.vn/toan-tap-tu-dien-nang-luc
 
 - [Communication](/skills/communication)
 - [Conflict resolution](/skills/conflict-resolution)
