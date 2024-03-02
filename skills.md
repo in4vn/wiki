@@ -2,7 +2,7 @@
 title: 🎖️ Skills
 description: Soft skills
 published: true
-date: 2024-03-02T07:19:51.136Z
+date: 2024-03-02T07:24:20.147Z
 tags: 
 editor: markdown
 dateCreated: 2024-01-21T07:58:00.908Z
@@ -22,6 +22,7 @@ https://talent.vn/toan-tap-tu-dien-nang-luc
 - [[Skills: Flexibility]] - TBD
 
 - [Mentorship](/skills/mentorship)
+- [Negotiation](/skills/negotiation)
 
 - [[Skills: Organization]] - TBD
 
