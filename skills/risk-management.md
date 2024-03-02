@@ -1,8 +1,8 @@
 ---
-title: Skills: Risk Management
+title: Skills: Risk management
 description: 
 published: true
-date: 2024-03-02T06:58:21.554Z
+date: 2024-03-02T06:59:32.370Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:58:21.554Z
