@@ -1,8 +1,8 @@
 ---
-title: Skills: Problem solving
+title: Skills: Problem Solving
 description: 
 published: true
-date: 2024-03-02T06:50:18.264Z
+date: 2024-03-02T06:58:57.151Z
 tags: skills
 editor: markdown
 dateCreated: 2024-01-27T02:33:33.341Z
