@@ -1,8 +1,8 @@
 ---
-title: Install Debian 12
+title: Install Debian
 description: 
 published: true
-date: 2024-02-29T02:24:25.894Z
+date: 2024-03-02T06:34:14.474Z
 tags: work
 editor: markdown
 dateCreated: 2024-02-04T03:47:48.647Z
