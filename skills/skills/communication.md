@@ -2,7 +2,7 @@
 title: Skills: Communication
 description: 
 published: true
-date: 2024-03-02T06:47:52.136Z
+date: 2024-03-02T06:48:14.265Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:47:52.136Z
