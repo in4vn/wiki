@@ -2,7 +2,7 @@
 title: Skills: People management
 description: 
 published: true
-date: 2024-03-11T10:12:53.496Z
+date: 2024-03-11T10:18:38.851Z
 tags: skills
 editor: markdown
 dateCreated: 2024-02-14T02:48:34.796Z
@@ -21,3 +21,4 @@ dateCreated: 2024-02-14T02:48:34.796Z
 # Learn
 
 - Take a breath. Detach from situation. Find the root cause. Action
+- Transparent to our mistake. Say sorry and find a way to fix it
