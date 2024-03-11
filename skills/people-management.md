@@ -2,7 +2,7 @@
 title: Skills: People management
 description: 
 published: true
-date: 2024-03-11T10:21:24.971Z
+date: 2024-03-11T10:22:06.119Z
 tags: skills
 editor: markdown
 dateCreated: 2024-02-14T02:48:34.796Z
@@ -22,4 +22,4 @@ dateCreated: 2024-02-14T02:48:34.796Z
 
 - Take a breath. Detach from situation. Find the root cause. Action
 - Transparent to our mistake. Say sorry and find a way to fix it
-- Be curiousity. Put your self in other's shoes, to find the root cause. How can we help?
+- Be curiousity. Put your self in other's shoes, to find the root cause. Talk to them. How can we help?
