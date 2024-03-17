@@ -2,11 +2,29 @@
 title: Skills: Communication
 description: 
 published: true
-date: 2024-03-02T06:48:14.265Z
+date: 2024-03-17T08:54:44.551Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:47:52.136Z
 ---
+
+
+# Listening
+
+Listening means paying attention not only to the story, but 
+- how it is told, 
+- the use of language and voice, 
+- and how the other person uses his or her body. 
+
+In other words, it means being aware of both verbal and non-verbal messages. Your ability to listen effectively depends on the degree to which you perceive and understand these messages.
+
+## Active Listening
+
+## Refs
+
+- https://www.skillsyouneed.com/ips/listening-skills.html
+
+# Speaking
 
 # Levels
 ## Mức độ 5 - Mức độ xuất sắc:
