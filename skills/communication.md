@@ -2,7 +2,7 @@
 title: Skills: Communication
 description: 
 published: true
-date: 2024-03-17T09:13:59.518Z
+date: 2024-03-17T09:31:52.620Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:47:52.136Z
@@ -25,7 +25,28 @@ We may also get distracted by the speaker’s personal appearance or by what som
 
 ## Tips
 
-
+- When someone is speaking, it’s time to stop what else you were doing, so you can focus on listening. 
+  - Put your phone away, turn away from your computer, put aside your thoughts about what you’re going to have for lunch, and simply concentrate on what they’re saying. 
+  - Make eye contact with them to show that you are listening, and focus your attention on them.
+- Try to listen WITHOUT considering whether you agree or disagree, or how you are going to reply, or any feelings you have about the speaker.
+  - Putting aside your prejudices, assumptions and biases. 
+  - It is also important not to make making any kind of judgement about the speaker or their message.
+  - Certainly do not start preparing a counter-argument in your head.
+- Remove distractions
+  - Turn off the noise, or go somewhere else where you can hear and listen effectively
+  - Being in physical discomfort, for example because you are hungry or thirsty, or your chair is uncomfortable. With the speaker’s agreement, stop and get a drink, or something or eat, or change your chair.
+  - Being distracted by some characteristic of the speaker, such as their looks or their accent. Under these circumstances, the most effective thing that you can do is to be aware of your issue. You can then concentrate harder to overcome the effect.
+- Show the speaker you are listening
+  - Make eye contact with the speaker, nod, and make affirmative noises such as ‘Mm-hm’
+  - Briefly summarising what you have heard and/or taken from their words. Using short phrases like ‘Wow! That must have been exciting!”, “Goodness, that sounds awful!”, or “It sounds like that was very nerve-wracking” show that you are paying attention to more than just their words, but also their feelings.
+- As you listen to someone talking, take time to consider their non-verbal communication as well as their words—and ask yourself what message that is sending to you. 
+  - Non-verbal communication, such as the tone, volume and pitch of voice, facial expressions, body language, and behaviour, convey an enormous amount of information and meaning. For example, when we are excited, we tend to talk faster, and more loudly, and the pitch of our voice goes up. When we are upset about something, our voices drop, and we tend to avoid eye contact.
+  - If there is a clash between the messages from verbal and non-verbal communication, the non-verbal communication is generally more reliable. It is much easier to lie with words than with our bodies or faces. They tend to give us away.
+- If your mind wanders, just bring it back to the speaker. Refocus your mind, and consciously pay attention again.
+- It’s good to seek clarification or show that you are listening—but wait for the speaker to finish speaking, or at least pause.
+  - As a general rule, don’t jump in until you’re sure that the speaker is ready for you to do so. 
+  - However, there are exceptions to this, including if someone is talking too much, and you need to interrupt to give someone else some air-time. 
+- Put yourself in the speaker’s shoes, so that you genuinely understand their point of view.
 
 ## Refs
 
