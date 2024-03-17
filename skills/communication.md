@@ -2,7 +2,7 @@
 title: Skills: Communication
 description: 
 published: true
-date: 2024-03-17T08:54:44.551Z
+date: 2024-03-17T09:13:59.518Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:47:52.136Z
@@ -18,13 +18,32 @@ Listening means paying attention not only to the story, but
 
 In other words, it means being aware of both verbal and non-verbal messages. Your ability to listen effectively depends on the degree to which you perceive and understand these messages.
 
-## Active Listening
+One common problem is that instead of listening closely to what someone is saying, we often get distracted after a sentence or two and instead start to think about what we are going to say in reply or think about unrelated things. This means that we do not fully listen to the rest of the speaker’s message.
+It is a common habit for the listener to use the spare time while listening to daydream or think about other things, rather than focusing on what the speaker is saying.
+
+We may also get distracted by the speaker’s personal appearance or by what someone else is saying, which sounds more interesting.
+
+## Tips
+
+
 
 ## Refs
 
 - https://www.skillsyouneed.com/ips/listening-skills.html
 
-# Speaking
+# Speaking (Verbal Communication)
+
+Generally we find it easier to focus if the speaker is fluent in their speech, has a familiar accent, and speaks at an appropriate loudness for the situation. It is more difficult, for example, to focus on somebody who is speaking very fast and very quietly, especially if they are conveying complex information.
+
+## Refs
+
+- https://www.skillsyouneed.com/ips/verbal-communication.html
+
+# Non-Verbal Communication
+
+## Refs
+
+- https://www.skillsyouneed.com/ips/nonverbal-communication.html
 
 # Levels
 ## Mức độ 5 - Mức độ xuất sắc:
