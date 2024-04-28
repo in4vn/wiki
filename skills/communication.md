@@ -2,7 +2,7 @@
 title: Skills: Communication
 description: 
 published: true
-date: 2024-03-17T09:31:52.620Z
+date: 2024-04-28T09:35:17.671Z
 tags: skills
 editor: markdown
 dateCreated: 2024-03-02T06:47:52.136Z
@@ -47,6 +47,7 @@ We may also get distracted by the speaker’s personal appearance or by what som
   - As a general rule, don’t jump in until you’re sure that the speaker is ready for you to do so. 
   - However, there are exceptions to this, including if someone is talking too much, and you need to interrupt to give someone else some air-time. 
 - Put yourself in the speaker’s shoes, so that you genuinely understand their point of view.
+- Letting the speaker lead the conversation. As we said before, empathic listening is more of a therapeutic technique. It is therefore not really about an equal conversation. Instead, you should let the speaker lead the conversation, including setting pauses, or showing you when they want you to speak.
 
 ## Refs
 
